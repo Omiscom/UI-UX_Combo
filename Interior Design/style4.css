@@ -1,0 +1,91 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+.back{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(VIEW.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.back h1{
+  color: white;
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+span{
+  color: orange;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin: auto;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+  position: relative;
+
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+  width: 100%;
+}
+.main{
+  align-items: center;
+  text-align: center;
+}
+.main h1{
+  color: ;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-top: 10%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main p{
+  color: white;;
+  font-family: sans-serif;
+}
+button{
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+button:hover{
+  background-color: transparent;
+  border: 2px solid orange;
+  cursor: pointer;
+}

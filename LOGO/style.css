@@ -1,0 +1,108 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+}
+header{
+  position: relative;
+  max-width: 95%;
+  margin: 20px auto 0;
+  padding: 10px;
+  background: #000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0 0 0 .2);
+}
+.logo{
+  color: #069370;
+  height: 60px;
+  font-size: 36px;
+  line-height: 60px;
+  padding: 0 20px;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  font-weight: 700;
+  text-decoration: none;
+}
+span{
+  color: #fff;
+}
+span:hover{
+  color: #000;
+}
+.logo:hover{
+  background-color: #fff;
+}
+nav{
+  float: right;
+}
+.clearfix{
+  clear: both;
+}
+ul{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+li a{
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+li input{
+  display: block;
+  margin: 10px 4px;
+  padding: 10px 50px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+li button{
+  margin: 10px 2px;
+  padding: 10px 25px;
+  color: red;
+  font-family:monospace;
+}
+li button:hover{
+  background-color: #069370;
+  color: #fff;
+}
+li a:hover{
+  background: #069370;
+  color: #fff;
+  transition: 0.5s;
+}
+.container{
+  display: flex;
+  max-width: 95%;
+  margin: auto;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(200, 10, 20, 0.5), rgba(190, 0, 0, 0.5));
+  height: 100vh;
+}
+.left{
+  height: 300px;
+  width: 50%;
+  background-color: red;
+}
+.right{
+  height: 300px;
+  width: 50%;
+  background-color: blue;
+}
+h1{
+  text-align: center;
+  font-family: cursive;
+  color: #ff34de;
+}
+p{
+  padding: 2px 30px;
+  color: #fff;
+}

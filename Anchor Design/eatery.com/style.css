@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sidea{
+    background: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    display: flex;
+    width: 30%;
+    height: 10vh;
+}
+img{
+    
+}
+.dashboard{
+    display: flex;
+    padding: 0 30%;
+}

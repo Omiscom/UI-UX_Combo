@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #47B5FF, #7C3E66);
+    padding: 10px;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+}
+.title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #47B5FF, #7C3E66);
+    left: 0;
+    bottom: 0;
+}
+.user_details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+.input_box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+.input_box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3sec ease-in-out;
+}
+.details{
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+.input_box input:focus,
+.input_box input:valid{
+    border-color: #7C3E66;
+}
+.gender_title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.category{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 0;  
+}
+.category label{
+    display: flex;
+    align-items: center;
+}
+.dot{
+    width: 18px;
+    height: 18px;
+    background: #9d9d9d;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3sec ease;
+}
+#dot_1:checked ~ .category .one,
+#dot_2:checked ~ .category .two,
+#dot_3:checked ~ .category .three{
+    border-color: #9d9d9d;
+    background: #7C3E66;
+}
+form input[type='radio']{
+    display: none;
+}
+.button{
+    height: 50px;
+    margin: 45px 0;
+}
+.button input{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(135deg, #47B5FF, #7C3E66);
+    border: 0;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.button input:hover{
+    background: linear-gradient(-135deg, #47B5FF, #7C3E66);
+}
+
+@media (max-width: 584px) {
+    .container{
+        max-width: 100%;
+    }
+    .input_box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .category{
+        width: 100%;
+    }
+    .container .user_details{
+        max-width: 300px;
+        overflow-y: scroll;
+    }
+    .user_details::-webkit-scrollbar{
+        width: 0;
+    }
+}

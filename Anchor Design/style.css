@@ -1,0 +1,471 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: #141414;
+}
+
+.navbar {
+  display: flex;
+  background: #131313;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar__container {
+  justify-content: space-between;
+  display: flex;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+#navrbar__logo {
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.fa-gem {
+  margin-right: 0.5rem;
+}
+
+.navbar__menu {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar__item {
+  height: 80px;
+}
+
+.navbar__links {
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.navbar__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background: #f77062;
+  color: white;
+}
+
+.button:hover {
+  background: #4837ff;
+  transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+  color: #f77062;
+  transition: all 0.3s ease;
+}
+
+
+/* Hero CSS begins here */
+
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  height: 90vh;
+  z-index: 1;
+  text-align: left;
+  padding: 3% 15%;
+}
+.between{
+  padding: 0 20px;
+}
+
+.main__content h1 {
+  font-size: 2.5rem;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main__content h2 {
+  font-size: 2.5rem;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main__content p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 600px;
+  color: #fff;
+}
+
+.main__btn {
+  font-size: 1rem;
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.main__btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.main__btn:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #4837ff;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.main__btn:hover {
+  color: #fff;
+}
+
+.main__btn:hover:after {
+  width: 100%;
+}
+
+.main__img__container {
+  text-align: center;
+}
+
+#main_img {
+  height: 400px;
+  width: 400px;
+}
+
+/* Services CSS Section*/
+
+.services h1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(to right,
+      #ff8177 0%,
+      #ff867a 0%,
+      #ff8c7f 21%,
+      #f99185 52%,
+      #cf556c 78%,
+      #b12a5b 100%);
+  background-size: 100%;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  /* stage 2 The css below is used to give text multicolour*/
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+
+.services{
+  text-align: center;
+  margin: auto;
+  color: #fff;
+}
+.services__container{
+  margin: 2% 15%;
+  display: flex;
+}
+.services__card{
+  padding: 20px 40px;
+  position: relative;
+}
+.h2_head{
+  position: absolute;
+  top: 260px;
+  left: 60px;
+}
+.p_sub{
+  position: absolute;
+  top: 300px;
+  left: 60px;
+}
+.btn_btn{
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #ff7062;
+  position: absolute;
+  top: 350px;
+  left: 60px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.img_size{
+  width: 400px;
+  height: 400px;
+}
+
+/* Footer CSS */
+
+.footer__con{
+  background-color: #141414;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer__logo{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.footer__links{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer__links__wrapper{
+  display: flex;
+}
+.footer__links__items{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  margin: 16px;
+  text-align: left;
+  width: 160px;
+  box-sizing: border-box;
+}
+.footer__links__items h2{
+  margin-bottom: 16px;
+}
+.footer__links__items > h2{
+  color: #fff;
+}
+.footer__links__items a{
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.footer__links__items a:hover{
+  color: #e9e9e9;
+  transition: 0.3s ease-out;
+}
+
+/* Social Icons*/
+.social__icon__link{
+  color: #fff;
+  font-size: 44px;
+}
+.social__media {
+  width: 100%;
+}
+.social__media__wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 40px auto 0 auto;
+}
+.social__icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+}
+.social__logo{
+  color: #fff;
+  justify-self: flex-start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.website_right{
+  color: #e9e9e9;
+}
+
+@media (max-width: 960px){
+  .footer__links{
+    padding-top: 2rem;
+  }
+  #footer__logo{
+    margin-bottom: 2rem;
+  }
+  .website_right{
+    margin-bottom: 2rem;
+  }
+  .footer__links__wrapper{
+    flex-direction: column;
+  }
+  .social__media__wrap{
+    flex-direction: column;
+  }
+
+
+  /*  */
+  .services h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(to right,
+        #ff8177 0%,
+        #ff867a 0%,
+        #ff8c7f 21%,
+        #f99185 52%,
+        #cf556c 78%,
+        #b12a5b 100%);
+    background-size: 100%;
+    margin-bottom: 2rem;
+    margin-top: 10rem;
+    font-size: 2.5rem;
+    z-index: 2;
+    /* stage 2 The css below is used to give text multicolour*/
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
+  .services__container{
+    margin: 2% 8%;
+    display: block;
+  }
+  .services__card{
+    padding: 20px 10px;
+    position: relative;
+  }
+  .h2_head{
+    position: absolute;
+    top: 260px;
+    left: 70px;
+  }
+  .p_sub{
+    position: absolute;
+    top: 300px;
+    left: 70px;
+  }
+  .btn_btn{
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #ff7062;
+    position: absolute;
+    top: 350px;
+    left: 70px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .img_size{
+    width: 400px;
+    height: 400px;
+  }
+
+  /*  */
+
+  .main__container {
+    display: block;
+    align-items: center;
+    justify-self: center;
+    height: 90vh;
+    z-index: 1;
+    text-align: left;
+    padding: 7% 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__links{
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+  .main__container{
+    display: inline-block;
+  }
+  .between{
+    position: relative;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .main__content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .main__content h2 {
+    font-size: 2rem;
+  }
+
+  .main__content p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .main__btn {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
+  }
+}

@@ -1,0 +1,76 @@
+<?php
+$username = filter_input(INPUT_POST, 'username');
+$password = filter_input(INPUT_POST, 'password');
+
+if(!empty($username)){
+if(!empty($password)){
+
+$host = "localhost";
+$user = "hbstudent";
+$password = "hbstudent";
+$db = "librarymanagement";
+
+//connection conect //
+
+mysqli_connect($host, $user, $password);
+mysql_select_db($db);
+
+if(isset($_POST['username'])){
+  $uname = $_POST['username'];
+  $pass = $_POST['password'];
+
+   $sql = "select * from login where username='".$uname."' AND password='".$pass."' limit 1";
+
+   $result = sql_query($sql);
+   if(mysql_num_rows($result)==1){
+     echo "You have successfully logged in";
+     exit();
+   }else {
+     echo "You have entered incorrect password";
+     exit();
+   }
+
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <title>Login and Register Form</title>
+  <body>
+    <div class="login-page">
+    <div class="form">
+      <form class="register-form" action="" method="POST">
+            <input type="text" name="" value="" placeholder="Enter your user name">
+            <input type="password" name="" value="" placeholder="Enter your Password">
+            <input type="email" name="" value="" placeholder="Enter your Email">
+            <br>
+            <button>Create</button>
+            <p class="message">Already Registered <a href="#">Login</a></p>
+      </form>
+      <form class="login-form" action="" method="POST">
+            <input type="text" name="username" value="" placeholder="Enter your user name">
+            <input type="password"  placeholder="Enter Password" name="password" value="">
+            <button>Login</button>
+            <p class="message"> Not yet Registered <a href="#">Create</a></p>
+      </form>
+
+    </div>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'>
+    </script>
+    <script>
+      $('.message a').click(function() {
+        $('form').animate({
+          height: "toggle",
+          opacity: "toggle"
+        }, "slow");
+      });
+    </script>
+  </body>
+</html>
